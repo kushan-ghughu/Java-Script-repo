@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper sicissor game Version-0.1</title>
+</head>
+<body>
+    <p>Rock Paper Sicissopr Game</p>
+    <button onclick="
+    const randamNumber=Math.random(); 
+    let computerMove='';
+    if(randamNumber>=0 && randamNumber<1/3){
+         computerMove= 'Rock';
+
+    }else if(randamNumber>=1/3 && randamNumber<2/3){
+        computerMove= 'Paper';
+
+    }else if(randamNumber>=2/3 && randamNumber<1){
+         computerMove= 'Sicissor';
+
+    }
+
+    let result='';
+
+    if(computerMove === 'Rock'){
+        result='tie';
+    }else if(computerMove === 'Paper'){
+        result='you lose';
+    }else if(computerMove === 'Sicissor'){
+        result='you win';
+    }
+    console.log(result);
+    alert(`you picked rock and computer picked ${computerMove}, so  ${result}`)
+    ">Rock</button>
+    <button onclick="
+    const randamNumber=Math.random(); 
+    let computerMove='';
+    if(randamNumber>=0 && randamNumber<1/3){
+         computerMove= 'Rock';
+
+    }else if(randamNumber>=1/3 && randamNumber<2/3){
+        computerMove= 'Paper';
+
+    }else if(randamNumber>=2/3 && randamNumber<1){
+         computerMove= 'Sicissor';
+
+    }
+
+    let result='';
+
+    if(computerMove === 'Rock'){
+        result='you win';
+    }else if(computerMove === 'Paper'){
+        result='tie';
+    }else if(computerMove === 'Sicissor'){
+        result='you lose';
+    }
+    console.log(result);
+    alert(`you picked paper and computer picked ${computerMove}, so  ${result}`)
+    " >Paper</button>
+
+
+    <button onclick="
+    const randamNumber=Math.random(); 
+    let computerMove='';
+    if(randamNumber>=0 && randamNumber<1/3){
+         computerMove= 'Rock';
+
+    }else if(randamNumber>=1/3 && randamNumber<2/3){
+        computerMove= 'Paper';
+
+    }else if(randamNumber>=2/3 && randamNumber<1){
+         computerMove= 'Sicissor';
+
+    }
+
+    let result='';
+
+    if(computerMove === 'Rock'){
+        result='you lose';
+    }else if(computerMove === 'Paper'){
+        result='you win';
+    }else if(computerMove === 'Sicissor'){
+        result='tie';
+    }
+    console.log(result);
+    alert(`you picked sicissor and computer picked ${computerMove}, so  ${result}`)
+    ">Sicissor</button>
+</body>
+</html>
+
+<!-- 
+    Algorithm-
+
+    1.computer randamly select a move.
+    2.compare the move to get the result.
+    3.Display the result in a popup.
+
+    randam no-(0 to 1)
+    0___rock___1/3______paper_____2/3______sicissor_____1
+    0 to 1/3 - rock
+    1/3 to 2/3 - paper
+    2/3 to 3 - sicissor
+-->

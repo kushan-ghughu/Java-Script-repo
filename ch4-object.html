@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object in java script</title>
+</head>
+<body>
+    <script>
+        //object
+        // const product={
+        //     //property: value
+        //     name: 'shoes',
+        //     price: 2000
+        // };
+        // console.log(product);
+        // console.log(product.name);
+        // console.log(product.price);
+        // //-----------------------------
+        // product.name='boot';
+        // console.log(product);
+        // //------------------------------
+        // product.brand='denin';
+        // console.log(product);
+        // //-----------------------------
+        // //delete product
+        // delete product.brand;
+        // console.log(product);
+        // const product2={
+        //     "name":'shirt',
+        //     'brand': "colo",
+        //     //bracket notation
+        //     ['desgin time']: '1 day',
+        //     //nested objet
+        //     ratings:{
+        //         'stars':'4.5',
+        //         'count':'95'
+        //     },
+        //     //function
+        //     myFunction: function function1(){
+        //         console.log("function inside the product 2");
+        //     }
+        // };
+        // // console.log(product2);
+        // // console.log(product2['desgin time']);
+        // // console.log(product2['name']);
+        // console.log(product2.ratings.count);
+        // product2.myFunction();
+       
+        //types of object
+        //4 types
+        //1. console
+        //2. math
+        //3. json(javascript object notation)
+        //4. localStorage
+        // console.log(typeof console);
+        //JASON
+        let product={
+            //property: value
+            name: 'shoes',
+            price: 2000
+        };
+        //js object convert into json object
+        const jsonString= JSON.stringify(product);
+        console.log(typeof jsonString);
+
+        ////js json object into object convert
+        jsObject= JSON.parse(jsonString);
+        console.log(typeof jsObject);
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter 5 project 1</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+        }
+        .sub-btn{
+            background-color: red;
+            border: none;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .is-subcribed{
+            background-color: rgb(127, 118, 118);
+        }
+      
+        
+    </style>
+</head>
+
+<body>
+    <p>youtube subscribe button</p>
+    <button onclick="
+    subscribe();
+    
+    " class="js-sub-btn sub-btn">subscribe</button>
+
+    <script>
+        function subscribe() {
+            let buttonElement = document.querySelector('.js-sub-btn');
+            if (buttonElement.innerHTML === 'subscribe') {
+                buttonElement.innerHTML = 'subscribed';
+                buttonElement.classList.add('is-subcribed');
+                
+            } else {
+                buttonElement.innerHTML = 'subscribe';
+                buttonElement.classList.remove('is-subcribed');
+            }
+        }
+    </script>
+</body>
+
+</html>
+<!--
+    1. if the text is subscribe => subscribed
+    2. vise versa
+-->
